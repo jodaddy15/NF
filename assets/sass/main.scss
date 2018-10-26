@@ -3,17 +3,19 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.background-blur {
   background: url(/img/background_nf.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   color: #fff;
-}
-
-.background-blur {
-  width: 100%;
-  height: 100%;
+  filter: blur(50px);
 }
 
 a {
@@ -26,28 +28,23 @@ a {
   padding: 15px;
 }
 
+header {
+  position: absolute;
+  top: 0;
+}
+
+.logo {
+  float: left;
+  left: 0;
+}
+
 nav {
+  position: relative;
   float: right;
+  right: -800px;
 }
 
 nav ul li {
   display: inline-block;
   padding-right: 15px;
-}
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
 }
