@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
 @import "reset";
 
+html,
 body {
   font-family: "Roboto", sans-serif;
   width: 100%;
   height: 100%;
   background: rgb(0, 0, 0);
   color: #fff;
+  box-sizing: border-box;
 }
 
 .background-blur {
@@ -70,7 +72,7 @@ nav ul li {
 
 .bio-section {
   position: absolute;
-  padding: 25px;
+  padding: 50px;
   z-index: 1;
   background: #000;
   width: 100%;
@@ -80,7 +82,26 @@ nav ul li {
 }
 
 .bio-section p {
-  width: 90%;
+  width: 50%;
+  left: 15px;
+  float: left;
   margin: auto;
   font-size: 1.1rem;
+}
+
+.bio-section .logo {
+  float: right;
+  right: 15px;
+  width: 30%;
+}
+
+.bio-section .container {
+  max-width: 1400px;
+}
+
+#media {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
 }
